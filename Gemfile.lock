@@ -7,6 +7,7 @@ GEM
   remote: http://www.rubygems.org/
   specs:
     minitest (5.8.4)
+    rake (10.5.0)
 
 PLATFORMS
   ruby
@@ -15,6 +16,7 @@ DEPENDENCIES
   Crappies!
   bundler (~> 1.10)
   minitest (>= 5.3)
+  rake (~> 10.0)
 
 BUNDLED WITH
    1.10.6
