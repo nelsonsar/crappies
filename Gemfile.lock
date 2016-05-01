@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    Crappies (0.0.0)
+
+GEM
+  remote: http://www.rubygems.org/
+  specs:
+    minitest (5.8.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  Crappies!
+  bundler (~> 1.10)
+  minitest (>= 5.3)
+
+BUNDLED WITH
+   1.10.6

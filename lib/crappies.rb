@@ -1,0 +1,7 @@
+require 'crappies/game'
+require 'crappies/player'
+require 'crappies/come_out_handler'
+require 'crappies/immediate_win_handler'
+require 'crappies/immediate_loss_handler'
+require 'crappies/point_on_handler'
+require 'crappies/loaded_dice'
