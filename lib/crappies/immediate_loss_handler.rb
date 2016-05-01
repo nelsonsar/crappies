@@ -6,6 +6,6 @@ class ImmediateLossHandler < ComeOutHandler
   end
 
   def result(runs)
-    'Player lost'
+    ResultFactory.loss
   end
 end

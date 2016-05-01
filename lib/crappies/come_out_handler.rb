@@ -2,7 +2,9 @@ class ComeOutHandler
   def handle(runs)
     return result(runs) if can_handle?(runs)
 
-    @next.handle(runs) if @next
+    return ResultFactory.undefined unless @next
+
+    @next.handle(runs)
   end
 
   def next(handler)

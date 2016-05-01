@@ -6,6 +6,6 @@ class ImmediateWinHandler < ComeOutHandler
   end
 
   def result(runs)
-    'Player won'
+    ResultFactory.win
   end
 end

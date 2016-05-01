@@ -13,7 +13,7 @@ class Game
 
     @result = @chain.handle(@runs)
 
-    run if @result.nil?
+    run unless @result.game_over?
   end
 
   private

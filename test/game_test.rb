@@ -98,10 +98,10 @@ class GameTest < Minitest::Test
   end
 
   def player_wins(game)
-    assert_equal 'Player won', game.result
+    assert_equal 'Player won', game.result.to_s
   end
 
   def player_loses(game)
-    assert_equal 'Player lost', game.result
+    assert_equal 'Player lost', game.result.to_s
   end
 end

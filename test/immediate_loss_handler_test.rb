@@ -9,27 +9,27 @@ class ImmediateLossHandlerTest < Minitest::Test
     @handler = nil
   end
 
-  def test_return_player_lost_when_first_run_is_2
+  def test_player_loses_when_first_run_is_2
     runs = [2]
 
-    assert_equal 'Player lost', @handler.handle(runs)
+    assert_equal 'Player lost', @handler.handle(runs).to_s
   end
 
-  def test_return_player_lost_when_first_run_is_3
+  def test_player_loses_when_first_run_is_3
     runs = [3]
 
-    assert_equal 'Player lost', @handler.handle(runs)
+    assert_equal 'Player lost', @handler.handle(runs).to_s
   end
 
-  def test_return_player_lost_when_first_run_is_12
+  def test_player_loses_when_first_run_is_12
     runs = [12]
 
-    assert_equal 'Player lost', @handler.handle(runs)
+    assert_equal 'Player lost', @handler.handle(runs).to_s
   end
 
-  def test_return_null_when_first_run_is_not_2_or_3_or_12
+  def test_game_continues_when_first_run_is_not_2_or_3_or_12
     runs = [10]
 
-    assert_equal nil, @handler.handle(runs)
+    assert_equal 'The game continues...', @handler.handle(runs).to_s
   end
 end

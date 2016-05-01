@@ -6,7 +6,9 @@ class PointOnHandler < ComeOutHandler
   end
 
   def result(runs)
-    return 'Player won' if runs.first == runs.last
-    return 'Player lost' if runs.last == 7
+    return ResultFactory.win if runs.first == runs.last
+    return ResultFactory.loss if runs.last == 7
+
+    return ResultFactory.undefined
   end
 end
