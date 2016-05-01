@@ -16,7 +16,7 @@ DEPENDENCIES
   Crappies!
   bundler (~> 1.10)
   minitest (>= 5.3)
-  rake (~> 10.0)
+  rake
 
 BUNDLED WITH
    1.10.6
