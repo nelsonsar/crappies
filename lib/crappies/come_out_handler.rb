@@ -1,14 +1,12 @@
 class ComeOutHandler
+  attr_writer :next
+
   def handle(runs)
     return result(runs) if can_handle?(runs)
 
     return ResultFactory.undefined unless @next
 
     @next.handle(runs)
-  end
-
-  def next(handler)
-    @next = handler
   end
 
   protected
