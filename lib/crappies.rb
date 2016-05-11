@@ -1,4 +1,5 @@
 require 'crappies/game'
+require 'crappies/chain_builder'
 require 'crappies/player'
 require 'crappies/result/win_result'
 require 'crappies/result/loss_result'
